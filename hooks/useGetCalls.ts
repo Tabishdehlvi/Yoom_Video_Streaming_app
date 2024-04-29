@@ -27,7 +27,7 @@ export const useGetCalls = () => {
 
         setCallList(calls);
       } catch (error) {
-        console.log(error);
+        console.log("ERROR", error);
       } finally {
         setIsLoading(false);
       }
