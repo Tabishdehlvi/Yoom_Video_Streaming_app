@@ -5,7 +5,7 @@ interface HomeCardProps {
   className: string;
   img: string;
   title: string;
-  desciption: string;
+  description: string;
   handleClick: () => void;
 }
 
@@ -13,7 +13,7 @@ const HomeCard = ({
   className,
   img,
   title,
-  desciption,
+  description,
   handleClick,
 }: HomeCardProps) => {
   return (
@@ -29,7 +29,7 @@ const HomeCard = ({
       </div>
       <div className="flex flex-col gap-2">
         <h1 className="text-2xl font-bold">{title}</h1>
-        <p className="text-lg font-normal">{desciption}</p>
+        <p className="text-lg font-normal">{description}</p>
       </div>
     </div>
   );
